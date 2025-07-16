@@ -62,9 +62,9 @@ function Geometries() {
   ];
 
   const soundEffects = [
-    new Audio("/sounds/hit2.ogg"),
-    new Audio("/sounds/hit3.ogg"),
-    new Audio("/sounds/hit4.ogg"),
+    // new Audio("/sounds/hit2.ogg"),
+    // new Audio("/sounds/hit3.ogg"),
+    // new Audio("/sounds/hit4.ogg"),
   ];
 
   const materials = [
@@ -111,7 +111,10 @@ function Geometry({ r, position, geometry, soundEffects, materials }) {
   function handleClick(e) {
     const mesh = e.object;
 
-    gsap.utils.random(soundEffects).play();
+    // Only play sound if audio files exist
+    if (soundEffects.length > 0) {
+      gsap.utils.random(soundEffects).play();
+    }
 
     gsap.to(mesh.rotation, {
       x: `+=${gsap.utils.random(0, 2)}`,

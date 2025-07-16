@@ -21,7 +21,7 @@ const socialLinks = [
 
 function GenkubGreetingRobot(props) {
   const group = useRef();
-  const { scene } = useGLTF("/src/assets/genkub_greeting_robot.gltf");
+  const { scene } = useGLTF(import.meta.env.BASE_URL + "genkub_greeting_robot.gltf");
   useFrame(({ clock }) => {
     if (group.current) {
       // Add y-offset so the face is front-facing at the start

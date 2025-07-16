@@ -66,8 +66,8 @@ const HeroSection = () => {
             <motion.a
               initial={{ opacity: 0, width: 160, background: 'linear-gradient(to right, #8b5cf6, #a78bfa)' }}
               animate={{ opacity: 1 }}
-              href="#" // Replace with your CV file link
-              download
+              href={import.meta.env.BASE_URL + "Manodya_Dissnayake_CV.pdf"}
+              download="Manodya_Dissanayake_CV.pdf"
               className="inline-flex items-center py-3 pr-8 pl-8 rounded-lg border border-violet-100 dark:border-violet-900 bg-gradient-to-r from-violet-500 to-purple-600 text-white font-semibold shadow-lg focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 overflow-hidden whitespace-nowrap"
               style={{ position: 'relative', minWidth: 160 }}
               whileHover={{ width: 190, paddingRight: 44, background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(6px)' }}
