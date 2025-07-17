@@ -113,7 +113,7 @@ function Geometry({ r, position, geometry, soundEffects, materials }) {
 
     // Only play sound if audio files exist
     if (soundEffects.length > 0) {
-      gsap.utils.random(soundEffects).play();
+    gsap.utils.random(soundEffects).play();
     }
 
     gsap.to(mesh.rotation, {

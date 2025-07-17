@@ -90,7 +90,7 @@ const ContactSection = () => {
 
     emailjs.sendForm(
       "service_anq4c67",    // Provided EmailJS service ID
-      "template_43iz4hg",   // Provided EmailJS template ID
+      "template_y6zn08t",   // Auto-responder EmailJS template ID
       form.current,
       "UHg50ysvrcUGuUVCZ"     // Provided EmailJS public key
     )
