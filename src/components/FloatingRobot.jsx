@@ -14,11 +14,8 @@ const FloatingRobot = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 1 }}
-        className="fixed bottom-0 right-0 z-50 flex items-end justify-end cursor-pointer"
+        className="fixed bottom-0 right-0 z-50 flex items-end justify-end"
         style={{ width: '280px', height: '340px', pointerEvents: 'auto' }}
-        onClick={() => setIsChatOpen(true)}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
         title="Chat with me!"
       >
         {/* Hover Popup */}
@@ -48,7 +45,13 @@ const FloatingRobot = () => {
           style={{ overflow: 'visible' }}
         >
           <div style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', overflow: 'visible', display: 'flex', alignItems: 'end', justifyContent: 'end' }}>
-            <div style={{ transform: 'scale(0.5) translateY(55px)', transformOrigin: 'bottom right', width: '100%', height: '100%', position: 'relative' }}>
+            <div
+              style={{ transform: 'scale(0.5) translateY(55px)', transformOrigin: 'bottom right', width: '100%', height: '100%', position: 'relative', cursor: 'pointer' }}
+              onClick={() => setIsChatOpen(true)}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              title="Chat with me!"
+            >
               <Spline scene="https://prod.spline.design/Ug0KxAMon4oXCxi6/scene.splinecode" style={{ width: '100%', height: '100%', position: 'absolute', left: 0, top: 0 }} />
               <div style={{
                 position: 'absolute',

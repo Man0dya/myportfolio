@@ -74,7 +74,7 @@ const projects = [
     description: 'sustainable energy management platform with multi-role dashboards,secure payments with stripe, AI chatbot, and 50+ responsive UI components',
     tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     image: futurewattImg,
-    github: 'https://github.com',
+    github: 'https://github.com/Man0dya/FutureWatt',
     technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
   },
   {
@@ -82,7 +82,7 @@ const projects = [
     description: 'A full-stack Java web app for managing vehicle spare parts, customer orders, and admin operations. Built with MVC, JSP, and JavaScript.',
     tags: ['Java', 'JSP', 'HTML', 'CSS', 'JavaScript'],
     image: motofixImg,
-    github: 'https://github.com',
+    github: 'https://github.com/Man0dya/MotoFix',
     technologies: ['Java', 'JSP', 'HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -90,7 +90,7 @@ const projects = [
     description: 'My personal portfolio website to showcase my projects, skills, and contact information. Built with Vite + React and modern web technologies like Framer Motion and GSAP. Three.js and spline is used for interactive 3D models.',
     tags: ['React', 'Tailwind CSS', 'Framer Motion', 'GSAP', 'Vite', 'Three.js'],
     image: portfolioImg,
-    github: 'https://github.com',
+    github: 'https://github.com/Man0dya/myportfolio',
     technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'GSAP', 'Vite', 'Three.js'],
   },
   {
@@ -98,7 +98,7 @@ const projects = [
     description: 'A full-featured e-commerce platform for browsing, purchasing, and managing fashion products, with both customer and admin tools.',
     tags: ['PHP', 'HTML5', 'CSS3', 'JavaScript', 'MySQL'],
     image: belezzaImg,
-    github: 'https://github.com',
+    github: 'https://github.com/Man0dya/Belezza',
     technologies: ['PHP', 'HTML5', 'CSS3', 'JavaScript', 'MySQL'],
   },
   {
@@ -106,7 +106,7 @@ const projects = [
     description: 'A web application that generates images from text prompts using AI. Features user authentication, gallery, and sharing.',
     tags: ['React', 'Node.js', 'Express', 'OpenAI API'],
     image: imageGenImg,
-    github: 'https://github.com',
+    github: 'https://github.com/Man0dya/img-gen-1.0',
     technologies: ['React', 'Node.js', 'Express', 'OpenAI API'],
   },
   {
@@ -114,7 +114,7 @@ const projects = [
     description: 'A mobile app built with Kotlin to help users track expenses, set budgets, and visualize their personal finances.',
     tags: ['Kotlin', 'Android'],
     image: balanzImg,
-    github: 'https://github.com',
+    github: 'https://github.com/Man0dya/BalanZ',
     technologies: ['Kotlin', 'Android'],
   },
 ];

@@ -16,6 +16,7 @@
     "@react-three/drei": "^10.3.0",
     "@react-three/fiber": "^9.1.2",
     "@splinetool/react-spline": "^4.0.0",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.18.1",
     "gsap": "^3.13.0",
     "maath": "^0.10.8",
