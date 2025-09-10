@@ -1,9 +1,13 @@
 
 
+
 # My Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=for-the-badge&logo=github)](https://man0dya.github.io/myportfolio)
-
+<p align="center">
+  <a href="https://man0dya.github.io/myportfolio">
+    <img src="https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=for-the-badge&logo=github" alt="Live Demo" />
+  </a>
+</p>
 
 Welcome to my personal portfolio website! This project showcases my work, skills, and contact information, built with modern web technologies and a focus on interactive, user-friendly design.
 
