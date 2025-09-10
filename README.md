@@ -1,11 +1,12 @@
 
-# Manodya Dissanayake's Portfolio
+# My Portfolio
 
 Welcome to my personal portfolio website! This project showcases my work, skills, and contact information, built with modern web technologies and a focus on interactive, user-friendly design.
 
 ## 🚀 About Me
 
 **Manodya Dissanayake**  
+
 Motivated Data Science undergraduate at SLIIT with expertise in software development, database management, and programming (Python, Kotlin, JavaScript). Skilled in UI/UX design, web development, and with growing expertise and strong interest in AI/ML, focused on building user-friendly and impactful solutions. Passionate about applying technical skills to solve real-world challenges. Seeking an internship or entry-level opportunity in IT, Data Science, or AI/ML to contribute and grow professionally.
 
 ## 🌟 Features
@@ -30,23 +31,6 @@ Motivated Data Science undergraduate at SLIIT with expertise in software develop
 - `src/assets/` – Images, 3D models, and SVGs
 - `src/contexts/` – Theme and global context
 - `public/` – Static files and assets
-
-## 🚦 Getting Started
-
-1. **Clone the repository:**
-	```sh
-	git clone https://github.com/Man0dya/myportfolio.git
-	cd myportfolio
-	```
-2. **Install dependencies:**
-	```sh
-	npm install
-	```
-3. **Run the development server:**
-	```sh
-	npm run dev
-	```
-4. Open [http://localhost:5173/myportfolio/](http://localhost:5173/myportfolio/) in your browser.
 
 ## 🖼️ Project Gallery
 
