@@ -1,7 +1,8 @@
 
 
 
-# My Portfolio
+
+<h1 align="center">My Portfolio</h1>
 
 <p align="center">
   <a href="https://man0dya.github.io/myportfolio">
