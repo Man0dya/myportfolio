@@ -25,6 +25,16 @@ import OpenAIAPIIcon from '../assets/skills/openai-svgrepo-com.svg?react';
 import PhpIcon from '../assets/skills/php-programming-language-icon.svg?react';
 import MysqlIcon from '../assets/skills/mysql-svgrepo-com.svg?react';
 import GitIcon from '../assets/skills/github-color-svgrepo-com.svg?react';
+import NextjsIcon from '../assets/skills/next-js-svgrepo-com.svg?react';
+import ViteIcon from '../assets/skills/Vite.js.svg?react';
+import ThreejsIcon from '../assets/skills/threejs-1.svg?react';
+import FramerIcon from '../assets/skills/framer-motion.svg?react';
+import GSAPIcon from '../assets/skills/gsap-logo_svgstack_com_28451752699569.svg?react';
+import PythonIcon from '../assets/skills/python-svgrepo-com.svg?react';
+import JSPIcon from '../assets/skills/jsp-file-format-symbol-svgrepo-com.svg?react';
+import AndroidStudioIcon from '../assets/skills/android-studio-icon.svg?react';
+import GitPlainIcon from '../assets/skills/git-svgrepo-com.svg?react';
+import FigmaIcon from '../assets/skills/figma-svgrepo-com.svg?react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -148,8 +158,8 @@ const Projects = () => {
       <div ref={triggerRef} className="h-full">
         {/* Header - Fixed during scroll */}
         <div className="projects-header absolute top-0 left-0 right-0 z-10 pt-12 md:pt-20 pb-8 px-8 pointer-events-none">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl md:text-7xl font-black text-white mb-4 tracking-tight">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-5xl md:text-7xl font-black text-white mb-4 tracking-tight mx-auto inline-block">
               My Projects
             </h2>
           </div>
@@ -176,12 +186,6 @@ const Projects = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                     
-                    {/* Category Badge */}
-                    <div className="absolute top-4 left-4">
-                      <span className="px-4 py-2 bg-violet-600/80 backdrop-blur-md rounded-full text-white text-xs font-semibold uppercase tracking-wider">
-                        {project.category}
-                      </span>
-                    </div>
                   </div>
 
                   {/* Content */}
@@ -197,8 +201,8 @@ const Projects = () => {
                     </p>
 
                     {/* Tech icons */}
-                    <div className="flex items-center gap-3 mb-4">
-                      {project.tags.slice(0, 4).map((tag, idx) => {
+                    <div className="flex items-center gap-3 mb-4 flex-wrap">
+                      {project.tags.map((tag, idx) => {
                         const key = tag.toLowerCase();
                         const Icon = (
                           key.includes('react') && ReactIcon ||
@@ -214,22 +218,30 @@ const Projects = () => {
                           key.includes('openai') && OpenAIAPIIcon ||
                           key.includes('php') && PhpIcon ||
                           key.includes('mysql') && MysqlIcon ||
+                          key.includes('next') && NextjsIcon ||
+                          key.includes('vite') && ViteIcon ||
+                          key.includes('three') && ThreejsIcon ||
+                          key.includes('framer') && FramerIcon ||
+                          key.includes('gsap') && GSAPIcon ||
+                          key.includes('python') && PythonIcon ||
+                          key.includes('jsp') && JSPIcon ||
+                          key.includes('android') && AndroidStudioIcon ||
                           key.includes('git') && GitIcon ||
+                          key.includes('github') && GitIcon ||
+                          key.includes('figma') && FigmaIcon ||
                           null
                         );
 
                         return (
                           <div key={idx} title={tag} className="flex items-center justify-center w-9 h-9 rounded-full bg-white/6 border border-white/10 p-1">
-                            {Icon ? <Icon className="w-6 h-6" /> : <span className="text-xs text-violet-200">{tag}</span>}
+                            {Icon ? (
+                              <Icon className="w-6 h-6 text-violet-200" fill="currentColor" stroke="currentColor" aria-hidden />
+                            ) : (
+                              <span className="text-xs text-violet-200">{tag}</span>
+                            )}
                           </div>
                         );
                       })}
-
-                      {project.tags.length > 4 && (
-                        <div className="flex items-center justify-center w-9 h-9 rounded-full bg-white/6 border border-white/10 text-xs text-violet-200">
-                          +{project.tags.length - 4}
-                        </div>
-                      )}
                     </div>
 
                     {/* Links */}
