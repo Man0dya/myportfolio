@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-// Removed: import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { useGLTF, Environment, OrbitControls } from "@react-three/drei";
