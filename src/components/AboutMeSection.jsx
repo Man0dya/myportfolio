@@ -64,7 +64,9 @@ const AboutMeSection = () => {
     <section id="about" className="w-full min-h-[60vh] py-12 px-4 flex flex-col items-center justify-center scroll-mt-16 md:scroll-mt-20 relative">
       <h2 className="text-4xl md:text-5xl font-black text-center text-gray-800 dark:text-white mb-6 drop-shadow-lg">About Me</h2>
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        
         {/* 3D Model */}
+
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -73,7 +75,9 @@ const AboutMeSection = () => {
         >
           <Shapes />
         </motion.div>
+
         {/* Text & Features */}
+        
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
