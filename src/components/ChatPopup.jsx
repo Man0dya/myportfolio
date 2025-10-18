@@ -17,6 +17,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
   const scrollRef = useRef(null);
 
   // Default state for resetting
+
   const defaultMessages = [
     { from: "bot", text: "👋 Hi there! I'm MBot. How can I assist you today?" },
   ];
@@ -34,6 +35,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
   }, [messages, typing, typedText]);
 
   // Reset chat when closed
+
   useEffect(() => {
     if (!isOpen) {
       setMessages(defaultMessages);
@@ -45,6 +47,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
   }, [isOpen]);
 
   // Function to scroll to projects section
+
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
@@ -54,6 +57,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
   };
 
   // Function to scroll to hero section
+
   const scrollToHero = () => {
     const heroSection = document.getElementById('home');
     if (heroSection) {
@@ -63,6 +67,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
   };
 
   // Typewriter effect function
+
   const typewriterEffect = (text, callback) => {
     setIsTyping(true);
     setTypedText("");
@@ -86,6 +91,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
     setTyping(true);
 
     // Handle Yes button click separately
+
     if (option === "Yes") {
       setTyping(false);
       setOptions([]); // Clear options
@@ -140,6 +146,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
         setTypedText("");
 
         // Add follow-up messages with typewriter effect for 'Other Questions'
+
         if (option === "Other Questions") {
           setTimeout(() => {
             setMessages((prev) => [...prev, { from: "bot", text: "", isTyping: true }]);
@@ -153,6 +160,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
               setTypedText("");
 
               // Add the question about connecting
+
               setTimeout(() => {
                 setMessages((prev) => [...prev, { from: "bot", text: "", isTyping: true }]);
                 
@@ -165,6 +173,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
                   setTypedText("");
 
                   // Show Yes button
+
                   setOptions(["Yes"]);
                 });
               }, 500);
@@ -284,6 +293,7 @@ const ChatPopup = ({ isOpen, onClose }) => {
               )}
 
               {/* Initial Options (always visible initially) */}
+              
               {options.length > 0 && !typing && !isTyping && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
